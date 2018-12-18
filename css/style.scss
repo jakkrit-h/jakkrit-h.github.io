@@ -1,0 +1,135 @@
+@font-face{
+    font-family: "roboto";
+    src:url("../fonts/Roboto-Regular.ttf");
+}
+@font-face{
+    font-family: "fjallaone";
+    src:url("../fonts/FjallaOne-Regular.ttf");
+}
+@font-face{
+    font-family: "Ubuntu";
+    src:url("../fonts/Ubuntu-Regular.ttf");
+}
+@font-face{
+    font-family: "Ubuntu-light";
+    src:url("../fonts/Ubuntu-Light.ttf");
+}
+@font-face{
+    font-family: "Ubuntu-Bold";
+    src:url("../fonts/Ubuntu-Bold.ttf");
+}
+
+@font-face{
+    font-family: "Lato";
+    src:url("../fonts/Lato-Regular.ttf");
+}
+@font-face{
+    font-family: "ConcertOne-Regular";
+    src:url("../fonts/ConcertOne-Regular-Regular.ttf");
+}
+@font-face{
+    font-family: "Archivo";
+    src:url("../fonts/Archivo-Regular.ttf");
+}
+@font-face{
+    font-family: "Nunito-Regular";
+    src:url("../fonts/Nunito-Regular.ttf");
+}
+
+@font-face{
+    font-family: "Nunito-ExtraBold";
+    src:url("../fonts/Nunito-ExtraBold.ttf");
+}
+
+body{
+    background:#24252a;
+    font-family: "Nunito-ExtraBold";
+overflow-x: hidden;
+}
+*{
+    color:#fff;
+}
+header{
+    background: #34495e;
+}
+h1,p.header{
+    font-family: "Nunito-ExtraBold";
+    font-size: 3em;
+}
+p.sub-header{
+font-size: 2em;
+}
+.bg-second{
+    background: #34495e;
+ 
+}
+.bg-third{
+    background: #131317;
+}
+nav{
+    z-index:9;
+    border-bottom:1px solid rgba(255,255,255,0.3);
+     a{
+         color:rgba(255,255,255,1);
+        // border-bottom:2px solid transparent;
+     }
+     a:hover{
+         color:#fff;
+    //     border-bottom:2px solid #fff;
+
+     }
+    li::after{  
+        content: "";
+        display: block;
+        position: "absolute";
+        width: 0%;
+        border-bottom:2px solid #fff;
+        -webkit-transition: 0.5s ease-in-out;
+        transition: 0.5s ease-in-out;
+    }
+    li:hover::after{
+        width: 100%;
+    }
+.navbar-brand{
+    border-right:1px solid rgba(255,255,255,0.3);
+
+}
+      
+   
+}
+
+.sidebar{
+    position: fixed;
+    ul{
+        position: relative;
+        list-style: none;
+        margin-top:200%;
+    }
+    li{
+        position: relative;
+        width: 13px;
+        height: 13px;
+        cursor: pointer;
+    }
+    a{
+    
+        width: 100%;
+        height: 100%;
+        outline: none;
+        border-radius: 50%;
+        border:2px solid #fff;
+        background-color: transparent;
+        text-indent: -999em; /* make the text accessible to screen readers */
+        cursor: pointer;
+        position: absolute;
+    }
+    a:hover{
+        background-color: rgba(255,255,255,0.2);
+
+    }
+    a.active{
+        background: #fff;
+    }
+    border-right:1px solid rgba(255,255,255,0.3);
+
+}
