@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "roboto";
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "fjallaone";
+  src: url("../fonts/FjallaOne-Regular.ttf");
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-Regular.ttf");
+}
+@font-face {
+  font-family: "Ubuntu-light";
+  src: url("../fonts/Ubuntu-Light.ttf");
+}
+@font-face {
+  font-family: "Ubuntu-Bold";
+  src: url("../fonts/Ubuntu-Bold.ttf");
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Regular.ttf");
+}
+@font-face {
+  font-family: "ConcertOne-Regular";
+  src: url("../fonts/ConcertOne-Regular-Regular.ttf");
+}
+@font-face {
+  font-family: "Archivo";
+  src: url("../fonts/Archivo-Regular.ttf");
+}
+@font-face {
+  font-family: "Nunito-Regular";
+  src: url("../fonts/Nunito-Regular.ttf");
+}
+@font-face {
+  font-family: "Nunito-ExtraBold";
+  src: url("../fonts/Nunito-ExtraBold.ttf");
+}
+body {
+  background: #2E343c;
+  font-family: "Nunito-Regular";
+}
+
+h1 {
+  font-family: "Nunito-ExtraBold";
+  font-size: 5em;
+}
+
+nav {
+  background: #2E343c;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+nav a {
+  color: white;
+}
+nav a:hover {
+  color: #fff;
+}
+nav li::after {
+  content: "";
+  display: block;
+  position: "absolute";
+  width: 0%;
+  border-bottom: 2px solid #fff;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+nav li:hover::after {
+  width: 100%;
+}
+
+.sidebar {
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+.sidebar *, .sidebar *:hover {
+  color: #fff;
+}
+.sidebar li {
+  list-style-type: none;
+  font-size: 30px;
+}
+.sidebar a {
+  content: " asdasd";
+}
+
+.btn-circle {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 500px;
+  width: 150px;
+  height: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
