@@ -51,7 +51,9 @@ body {
 header {
   background: #34495e;
 }
-
+h1{
+  margin-top:50%;
+}
 h1, p.header {
   font-family: "Nunito-ExtraBold";
   font-size: 3em;
