@@ -51,9 +51,10 @@ body {
 header {
   background: #34495e;
 }
-h1{
-  margin-top:50 vh;
+header div {
+  padding-top: 20%;
 }
+
 h1, p.header {
   font-family: "Nunito-ExtraBold";
   font-size: 3em;
@@ -129,6 +130,19 @@ nav .navbar-brand {
 }
 .sidebar a.active {
   background: #fff;
+}
+
+img {
+  box-shadow: 0px 0px 10px #343434;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 30px #252525;
+  transition-duration: 0.8s;
+  transition-timing-function: ease-out;
 }
 
 /*# sourceMappingURL=style.css.map */
