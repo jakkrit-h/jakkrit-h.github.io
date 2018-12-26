@@ -40,17 +40,17 @@
     font-family: "Nunito-ExtraBold";
     src:url("../fonts/Nunito-ExtraBold.ttf");
 }
-$borderColor:rgba(255,255,255,0.3);
-$firstColor:#34495e;
+$borderColor:rgba(255,255,255,0.5);
+$firstColor:transparent/*#34495e*/;
 html{
     scroll-behavior: smooth;
-
+    overflow-x: hidden !important;
 }
 body{
-     background:#26262b;
-    // background: #e1e1e1;
-    font-family: "Nunito-ExtraBold";
-overflow-x: hidden;
+    //  background:#fafafa;
+     background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+                 font-family: "Nunito-ExtraBold";
+// overflow-x: hidden;
 position: relative;
 }
 *{
@@ -58,7 +58,7 @@ position: relative;
 }
 header{
     h1{
-        font-size: 1.1em;
+        font-size: 0.9em;
     }
     background: $firstColor;
     div{
@@ -68,6 +68,13 @@ header{
 h1,p.header{
  
     font-size: 1.5em;
+}
+h2{
+    font-size: 0.8em;
+    label{
+        color:#343a40;
+    }
+
 }
 p.sub-header{
  
@@ -84,11 +91,14 @@ font-size: 0.9em;
     
 }
 .bg-third{
-    background: #131317;
+    background:transparent /*#131317*/;
 }
 nav{
     z-index:9;
     border-bottom:1px solid $borderColor;
+    .navbar-brand {
+        color: #fff;
+    }
     //  a{
     //      color:rgba(255,255,255,1);
     //     // border-bottom:2px solid transparent;
@@ -114,12 +124,23 @@ nav{
         border-right:1px solid $borderColor;
 
     }
-      
+    transition-duration: 0.6s;
+    transition-timing-function: ease;
+
    
 }
-nav.onscroll{
-    color:#131317;
+nav.onscroll,nav:hover{
+    
+    $backColor:#343a40;
+    // box-shadow: 0px 0px 5px #333;
+    .navbar-brand{
+        color:$backColor;
+        border-right: 1px solid $borderColor;
+
+    }
+   
     z-index:9;
+    background: #fff;
     border-bottom:1px solid $borderColor;
     //  a{
     //      color:rgba(255,255,255,1);
@@ -142,10 +163,7 @@ nav.onscroll{
     // li:hover::after{
     //     width: 100%;
     // }
-    .navbar-brand{
-        border-right:1px solid $borderColor;
-
-    }
+  
 }
 
 

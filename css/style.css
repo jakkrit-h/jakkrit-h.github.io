@@ -40,12 +40,12 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden !important;
 }
 
 body {
-  background: #26262b;
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
   font-family: "Nunito-ExtraBold";
-  overflow-x: hidden;
   position: relative;
 }
 
@@ -54,10 +54,10 @@ body {
 }
 
 header {
-  background: #34495e;
+  background: transparent;
 }
 header h1 {
-  font-size: 1.1em;
+  font-size: 0.9em;
 }
 header div {
   padding-top: 70%;
@@ -65,6 +65,13 @@ header div {
 
 h1, p.header {
   font-size: 1.5em;
+}
+
+h2 {
+  font-size: 0.8em;
+}
+h2 label {
+  color: #343a40;
 }
 
 p.sub-header {
@@ -77,33 +84,39 @@ p.sub-header {
 }
 
 .bg-second {
-  background: #34495e;
+  background: transparent;
 }
 
 .bg-third {
-  background: #131317;
+  background: transparent;
 }
 
 nav {
   z-index: 9;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition-duration: 0.6s;
+  transition-timing-function: ease;
 }
 nav .navbar-brand {
-  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+nav .navbar-brand {
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-nav.onscroll {
-  color: #131317;
+nav.onscroll, nav:hover {
   z-index: 9;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  background: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
-nav.onscroll .navbar-brand {
-  border-right: 1px solid rgba(255, 255, 255, 0.3);
+nav.onscroll .navbar-brand, nav:hover .navbar-brand {
+  color: #343a40;
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .sidebar {
   position: fixed;
-  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
 }
 .sidebar ul {
   position: relative;
