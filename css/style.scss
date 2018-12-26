@@ -45,13 +45,14 @@ $firstColor:transparent/*#34495e*/;
 html{
     scroll-behavior: smooth;
     overflow-x: hidden !important;
+ 
 }
 body{
     //  background:#fafafa;
-     background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
-                 font-family: "Nunito-ExtraBold";
-// overflow-x: hidden;
-position: relative;
+    background-image: linear-gradient(to top, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+    // background-image: linear-gradient(to top, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%);
+    font-family: "Nunito-ExtraBold";
+  
 }
 *{
     color:#fff;
@@ -130,7 +131,7 @@ nav{
    
 }
 nav.onscroll,nav:hover{
-    
+
     $backColor:#343a40;
     // box-shadow: 0px 0px 5px #333;
     .navbar-brand{
