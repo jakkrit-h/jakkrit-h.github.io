@@ -1,36 +1,4 @@
 @font-face {
-  font-family: "roboto";
-  src: url("../fonts/Roboto-Regular.ttf");
-}
-@font-face {
-  font-family: "fjallaone";
-  src: url("../fonts/FjallaOne-Regular.ttf");
-}
-@font-face {
-  font-family: "Ubuntu";
-  src: url("../fonts/Ubuntu-Regular.ttf");
-}
-@font-face {
-  font-family: "Ubuntu-light";
-  src: url("../fonts/Ubuntu-Light.ttf");
-}
-@font-face {
-  font-family: "Ubuntu-Bold";
-  src: url("../fonts/Ubuntu-Bold.ttf");
-}
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato-Regular.ttf");
-}
-@font-face {
-  font-family: "ConcertOne-Regular";
-  src: url("../fonts/ConcertOne-Regular-Regular.ttf");
-}
-@font-face {
-  font-family: "Archivo";
-  src: url("../fonts/Archivo-Regular.ttf");
-}
-@font-face {
   font-family: "Nunito-Regular";
   src: url("../fonts/Nunito-Regular.ttf");
 }
@@ -38,18 +6,31 @@
   font-family: "Nunito-ExtraBold";
   src: url("../fonts/Nunito-ExtraBold.ttf");
 }
+@font-face {
+  font-family: "Nunito-Light";
+  src: url("../fonts/Nunito-Light.ttf");
+}
+@font-face {
+  font-family: "Nunito-ExtraLight";
+  src: url("../fonts/Nunito-ExtraLight.ttf");
+}
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden !important;
+  overflow-y: scroll;
 }
 
 body {
-  background-image: linear-gradient(to top, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+  background-image: linear-gradient(to top, #34495e 0%, #151e26 100%);
+  background-size: 100%;
   font-family: "Nunito-ExtraBold";
 }
 
 * {
   color: #fff;
+}
+
+div {
+  overflow: hidden;
 }
 
 header {
@@ -59,7 +40,7 @@ header h1 {
   font-size: 0.9em;
 }
 header div {
-  padding-top: 70%;
+  padding-top: 100%;
 }
 
 h1, p.header {
@@ -71,15 +52,21 @@ h2 {
 }
 h2 label {
   color: #343a40;
+  letter-spacing: 2px;
+}
+
+h3 {
+  font-size: 0.8em;
 }
 
 p.sub-header {
-  font-size: 0.9em;
+  font-family: "Nunito-Regular";
+  font-size: 1em;
 }
 
 .content {
   font-size: 0.8em;
-  font-family: "Nunito-Regular";
+  font-family: "Nunito-ExtraLight";
 }
 
 .bg-second {
@@ -98,8 +85,6 @@ nav {
 }
 nav .navbar-brand {
   color: #fff;
-}
-nav .navbar-brand {
   border-right: 1px solid rgba(255, 255, 255, 0.5);
 }
 
@@ -151,6 +136,14 @@ nav.onscroll .navbar-brand, nav:hover .navbar-brand {
 .sidebar li a.active {
   background: #fff;
 }
+.sidebar #scrolldescribe {
+  margin-top: 250%;
+  overflow-x: visible;
+  white-space: nowrap;
+  letter-spacing: 5px;
+  font-family: "Nunito-Regular";
+  transform: rotate(-90deg);
+}
 
 img {
   box-shadow: 0px 0px 10px #343434;
@@ -163,6 +156,17 @@ img:hover {
   box-shadow: 0px 0px 30px #252525;
   transition-duration: 0.8s;
   transition-timing-function: ease-out;
+}
+
+#work img {
+  box-shadow: none;
+}
+
+.svg, .svg:hover {
+  position: absolute;
+  top: 0%;
+  left: 70%;
+  box-shadow: none;
 }
 
 @media (min-width: 992px) {
