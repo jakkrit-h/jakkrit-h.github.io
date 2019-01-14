@@ -100,7 +100,7 @@ nav{
   
     .navbar-brand {
         color: #fff;
-        border-right:1px solid $borderColor;
+        border-right:0px solid $borderColor;
        
     }
     transition-duration: 0.6s;
@@ -152,7 +152,7 @@ nav.onscroll,nav:hover{
     ul{
         position: relative;
         list-style: none;
-        margin-top:200%;
+        margin-top:150%;
     }
     .nav-link{
         padding: 0;
@@ -200,7 +200,7 @@ nav.onscroll,nav:hover{
  
     }
   
-    border-right:1px solid $borderColor;
+    border-right:0px solid $borderColor;
 
 }
 
@@ -223,11 +223,12 @@ img:hover{
 }
 
 .svg,.svg:hover{
-    position: absolute;
+ 
     top: 0%;
     left:70%;
     box-shadow: none;
-
+    transform:scale(1);
+    z-index: -1;
 }
 @media (min-width: 992px) {
     header{

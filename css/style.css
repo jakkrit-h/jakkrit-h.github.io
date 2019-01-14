@@ -85,7 +85,7 @@ nav {
 }
 nav .navbar-brand {
   color: #fff;
-  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 0px solid rgba(255, 255, 255, 0.5);
 }
 
 nav.onscroll, nav:hover {
@@ -100,12 +100,12 @@ nav.onscroll .navbar-brand, nav:hover .navbar-brand {
 
 .sidebar {
   position: fixed;
-  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 0px solid rgba(255, 255, 255, 0.5);
 }
 .sidebar ul {
   position: relative;
   list-style: none;
-  margin-top: 200%;
+  margin-top: 150%;
 }
 .sidebar .nav-link {
   padding: 0;
@@ -163,10 +163,11 @@ img:hover {
 }
 
 .svg, .svg:hover {
-  position: absolute;
   top: 0%;
   left: 70%;
   box-shadow: none;
+  transform: scale(1);
+  z-index: -1;
 }
 
 @media (min-width: 992px) {
