@@ -136,16 +136,108 @@
 
   </div>
 
-  <div class=" container-fluid text-center row  mx-0 px-0" id="skill">
+  <div class=" container-fluid text-center row  mx-0 px-5" id="skill">
 
       <p class="header col-12 my-2 py-1 my-md-5 py-md-5" data-aos="flip-left">SKILLS</p>
-
-      <div class="col-6 col-lg-6  bg-second py-5"data-aos="fade-right" >
-      <p class="sub-header   col-12 my-5 py-5" data-aos="flip-up" data-aos-delay="400" > HTML5 </p>
-
+     
+          <div class="col-md-3 col-sm-6 my-5"data-aos="fade-up"data-aos-delay="0">
+              <div class="progress turquoise">
+                  <span class="progress-left">
+                      <span class="progress-bar"></span>
+                  </span>
+                  <span class="progress-right">
+                      <span class="progress-bar"></span>
+                  </span>
+                  <div class="progress-value">HTML 5</div>
+              </div>
+          </div>
+          <div class="col-md-3 col-sm-6 my-5"data-aos="fade-up"data-aos-delay="100">
+              <div class="progress emerland">
+                  <span class="progress-left">
+                      <span class="progress-bar"></span>
+                  </span>
+                  <span class="progress-right">
+                      <span class="progress-bar"></span>
+                  </span>
+                  <div class="progress-value">JAVASCRIPT</div>
+              </div>
+          </div>
+          <div class="col-md-3 col-sm-6 my-5"data-aos="fade-up"data-aos-delay="200">
+              <div class="progress peterriver">
+                  <span class="progress-left">
+                      <span class="progress-bar"></span>
+                  </span>
+                  <span class="progress-right">
+                      <span class="progress-bar"></span>
+                  </span>
+                  <div class="progress-value">BOOTSTRAP</div>
+              </div>
+          </div>
+          <div class="col-md-3 col-sm-6 my-5"data-aos="fade-up"data-aos-delay="300">
+              <div class="progress amethyst">
+                  <span class="progress-left">
+                      <span class="progress-bar"></span>
+                  </span>
+                  <span class="progress-right">
+                      <span class="progress-bar"></span>
+                  </span>
+                  <div class="progress-value">CSS 3</div>
+              </div>
+          </div>
+          <div class="col-md-3 col-sm-6 my-5"data-aos="fade-up"data-aos-delay="400">
+              <div class="progress sunflower">
+                  <span class="progress-left">
+                      <span class="progress-bar"></span>
+                  </span>
+                  <span class="progress-right">
+                      <span class="progress-bar"></span>
+                  </span>
+                  <div class="progress-value">PHP</div>
+              </div>
+          </div>
+          <div class="col-md-3 col-sm-6 my-5"data-aos="fade-up"data-aos-delay="500">
+              <div class="progress carrot">
+                  <span class="progress-left">
+                      <span class="progress-bar"></span>
+                  </span>
+                  <span class="progress-right">
+                      <span class="progress-bar"></span>
+                  </span>
+                  <div class="progress-value">MYSQL</div>
+              </div>
+          </div>
+          <div class="col-md-3 col-sm-6 my-5"data-aos="fade-up"data-aos-delay="600">
+              <div class="progress alizarin">
+                  <span class="progress-left">
+                      <span class="progress-bar"></span>
+                  </span>
+                  <span class="progress-right">
+                      <span class="progress-bar"></span>
+                  </span>
+                  <div class="progress-value">JQUERY</div>
+              </div>
+          </div>
+          <div class="col-md-3 col-sm-6 my-5"data-aos="fade-up"data-aos-delay="700">
+              <div class="progress ">
+                  <span class="progress-left">
+                      <span class="progress-bar"></span>
+                  </span>
+                  <span class="progress-right">
+                      <span class="progress-bar"></span>
+                  </span>
+                  <div class="progress-value">JAVA</div>
+              </div>
+          </div>
+    
+    
+      <!-- <div class="col-2 skill p-5 text-center"data-aos="fade-right" data-text="HTML5">
+        HTML5
+        <div class="circle-left"></div>
+        <div class="circle-right"></div>
 
       </div>
-      <div  class="col-6 col-lg-6 bg-third py-5"data-aos="fade-left" data-aos-delay="200" >
+  -->
+      <!-- <div  class="col-6 col-lg-6 bg-third py-5"data-aos="fade-left" data-aos-delay="200" >
       <p class="sub-header col-12 my-5 py-5" data-aos="flip-up"data-aos-delay="600"> JAVASCRIPT </p>
  
       </div>
@@ -172,7 +264,7 @@
       <div class="col-6 col-lg-6 bg-second py-5 order-lg-5"data-aos="fade-left" >
         <p class="sub-header col-12 my-5 py-5" data-aos="flip-up"data-aos-delay="400">  JAVA </p>
   
-      </div>
+      </div> -->
      
 
   </div>
@@ -241,7 +333,7 @@
     </div>
 
   </div>
-  <div class=" container-fluid text-center row  mx-0 px-0" id="work">
+  <div class=" container-fluid text-center row  mx-0 px-0 my-5 pb-5" id="work">
 
     <p class="header col-12 my-2 py-1 my-md-5 py-md-5" data-aos="flip-left">WORK EXPERIENCE</p>
     <!-- <div class="col-12 col-lg-6 bg-second py-5 order-1 order-lg-0"data-aos="fade-right" >
@@ -313,11 +405,7 @@
   $(".sidebar").hover(function(){
     showScrollSpy();
   },function(){
- 
-      showDescribe();
-   
-      
-      
+      showDescribe(); 
   });
  
   function checkScrollSpy(){
@@ -328,7 +416,9 @@
      
       if(str !== dataDescribe){
         $("#scrolldescribe").prop("data-describe",str);
-        addTextWithAnimation(str,$("#scrolldescribe"));
+        var describe="<label data-aos='flip-left'data-aos-once='true' >" +str+ "</label>";
+        $("#scrolldescribe").html(describe);
+        // addTextWithAnimation(str,$("#scrolldescribe"));
         if(!$(".sidebar").is(':hover')) 
           showDescribe();
       }
@@ -344,12 +434,12 @@
   }
   function showDescribe(){
 
-    $(".sidebar").find("ul").fadeOut();
-    $(".sidebar").find("h3").fadeIn();
+    $(".sidebar").find("ul").hide();
+    $(".sidebar").find("h3").show();
   }
   function showScrollSpy(){
-    $(".sidebar").find("ul").fadeIn();
-    $(".sidebar").find("h3").fadeOut();
+    $(".sidebar").find("h3").hide();
+    $(".sidebar").find("ul").show();
   }
   function addTextWithAnimation(str,target){
     target.empty();
@@ -363,28 +453,13 @@
         }
         var el="<label data-aos='flip-left'data-aos-delay='"+delay+"'data-aos-once='true' >"+char+"</label>";
         str+=el;
-        delay+=100;
+        delay+=50;
       }
       target.append(str);
    
   }
 
-    var test=document.getElementById("sky");
-  
-    var canvas=test.getContext('2d');   
-    for(var i =0;i< 50;i++){
-         var x=Math.floor((Math.random() * (test.width-150)) + 50);
-         var y=Math.floor((Math.random() * (test.height-500)) + 50);
-         var radius=Math.floor((Math.random() * 3) + 2);
-        console.log(y);
-        canvas.beginPath();
-        canvas.arc(x,y,radius,0,2*Math.PI);
-        canvas.strokeStyle='rgba(255,255,255,1)';
-        canvas.fillStyle="#fff";
-        canvas.stroke(); 
-        canvas.fill();
-      }
-
+    
 
    
 
