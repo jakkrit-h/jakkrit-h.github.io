@@ -24,8 +24,8 @@
 <body class="pb-5" data-spy="scroll">
   <!-- <img class="svg"src="images/moon.svg" width="500px" >   -->
   <nav class="navbar d-md-flex text-center sticky-top  p-0 ">
-    <a class="navbar-brand  text-center col-xl-1 col-md-2 py-3 mx-0 d-none d-md-block" href="index.html">Portfolio</a>
-    <h2 class="m-0  py-3 py-md-0  col-12 col-md-10 col-xl-11 text-center"></h2>
+    <a class="navbar-brand  text-center col-12 col-xl-1 col-md-2 py-3 mx-0 d-md-block" href="index.html">Portfolio</a>
+    <h2 class="m-0  py-3 py-md-0  col-12 col-md-10 col-xl-11 d-none d-md-block text-center"></h2>
 
   </nav>
 
@@ -107,7 +107,7 @@
 
       </div>
       <div class="col-12 col-md-6 bg-third py-5" data-aos="fade-left" data-aos-delay="600">
-        <p class="sub-header col-12 my-5" data-aos="flip-left">CONTRACT </p>
+        <p class="sub-header col-12 my-5" data-aos="flip-left">CONTACT </p>
         <p class="content" data-aos="fade-up" data-aos-delay="700"> zerotwo147@hotmail.com</p>
         <p class="content" data-aos="fade-up" data-aos-delay="800">091-091-6056 </p>
 
@@ -342,14 +342,18 @@
 
       if (scrollTop > 100) {
 
-
+        $("h2").removeClass("d-none");
+        $(".navbar-brand").addClass("d-none");
         $('.navbar').addClass('onscroll');
         if ($("h2").html() == "") {
           addTextWithAnimation("JAKKRIT HARNSARIKIT", $("h2"));
         }
       } else {
+        $(".navbar-brand").removeClass("d-none");
         $('.navbar').removeClass('onscroll');
+        $("h2").addClass("d-none");
         $("h2").empty();
+        
       }
       checkScrollSpy();
 
