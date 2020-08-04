@@ -219,7 +219,20 @@ nav.onscroll .navbar-brand, nav:hover .navbar-brand {
 .amethyst .progress-bar {
   border-color: #9b59b6;
 }
+.greensea .progress-bar {
+  border-color: #16a085;
+}
 
+.nephritis .progress-bar {
+  border-color: #27ae60;
+}
+
+.belizehole .progress-bar {
+  border-color: #2980b9;
+}
+.wisteria .progress-bar {
+  border-color: #8e44ad;
+}
 .sunflower .progress-bar {
   border-color: #f1c40f;
 }
@@ -230,6 +243,17 @@ nav.onscroll .navbar-brand, nav:hover .navbar-brand {
 
 .alizarin .progress-bar {
   border-color: #e74c3c;
+}
+.orange .progress-bar {
+  border-color: #f39c12;
+}
+
+.pumpkin .progress-bar {
+  border-color: #d35400;
+}
+
+.pomegranate .progress-bar {
+  border-color: #c0392b;
 }
 
 @keyframes circle-right {
